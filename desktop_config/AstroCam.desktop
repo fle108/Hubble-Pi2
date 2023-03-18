@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Name=AstroCam
+Exec=/usr/share/Hubble-Pi2/AstroCameraApp/PythonScripts/AstroCam.py
+Path=/usr/share/Hubble-Pi2/AstroCameraApp/PythonScripts/
+Terminal=false
+Type=Application
+Icon=/usr/share/Hubble-Pi2/Camera.png
+Categories=Utility;

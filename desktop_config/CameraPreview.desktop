@@ -3,4 +3,4 @@ Name=Camera Preview
 Exec=raspistill -t 0
 Terminal=true
 Type=Application
-Icon=/home/pi/Pictures/Internet Downloads/Video.png
+Icon=/usr/share/Hubble-Pi2/Video.png
