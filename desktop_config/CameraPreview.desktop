@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Camera Preview
-Exec=raspistill -t 0
+Exec=libcamera-vid -t 0
 Terminal=true
 Type=Application
 Icon=/usr/share/Hubble-Pi2/Video.png

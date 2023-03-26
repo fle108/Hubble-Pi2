@@ -1,1 +1,2 @@
--  finish work on desktop-setup w/ /usr/share/Hubble-Pi2 denied
+- starting adaptation to picamera2
+help with https://github.com/raspberrypi/picamera2/tree/main/examples

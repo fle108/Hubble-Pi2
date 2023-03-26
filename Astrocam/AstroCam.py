@@ -6,7 +6,7 @@ Created on Saturday Jun  6 10:14:33 2020
 @author: Santiago Rodriguez
 @based on code by Erik at http://helloraspberrypi.blogspot.com/2015/12/python-to-capture-image-from-pi-camera_17.html
 """
-import picamera
+from picamera2 import Picamera2, Preview
 import tkinter as Tkinter
 import time
 from PIL import ImageTk, Image
@@ -25,7 +25,7 @@ def camHandler():
     global rqs
     rqs = RQS_0
     
-    camera = picamera.PiCamera()
+    camera = Picamera2()
     #stream = io.BytesIO()
 
     #set default
