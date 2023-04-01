@@ -1,2 +1,38 @@
 - starting adaptation to picamera2
 help with https://github.com/raspberrypi/picamera2/tree/main/examples
+
+test bard code
+import tkinter as tk
+from picamera2 import PiCamera
+
+# Create the main window
+window = tk.Tk()
+window.title("Raspberry Pi Camera")
+window.geometry("640x480")
+
+# Create the camera object
+camera = PiCamera()
+camera.resolution = (640, 480)
+camera.framerate = 30
+
+# Create the canvas
+canvas = tk.Canvas(window, width=640, height=480)
+canvas.pack()
+
+# Create the video capture object
+capture = camera.capture_continuous(canvas.create_image((0, 0), anchor="nw"))
+
+# Create the control buttons
+contrast_button = tk.Button(window, text="Contrast", command=lambda: camera.contrast = int(tk.simpledialog.askinteger("Contrast", "Enter contrast value:")))
+luminosity_button = tk.Button(window, text="Luminosity", command=lambda: camera.luminosity = int(tk.simpledialog.askinteger("Luminosity", "Enter luminosity value:")))
+focus_button = tk.Button(window, text="Focus", command=lambda: camera.focus = int(tk.simpledialog.askinteger("Focus", "Enter focus value:")))
+exposure_time_button = tk.Button(window, text="Exposure time", command=lambda: camera.exposure_time = int(tk.simpledialog.askinteger("Exposure time", "Enter exposure time value:")))
+
+# Place the control buttons on the window
+contrast_button.pack(side="top")
+luminosity_button.pack(side="top")
+focus_button.pack(side="top")
+exposure_time_button.pack(side="top")
+
+# Start the main loop
+window.mainloop()
